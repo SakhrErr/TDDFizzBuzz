@@ -30,4 +30,22 @@ public class FizzBuzzConverterTest {
         Assert.assertEquals("1", result);
     }
 
+    @Test
+    public void shouldReturn2WhenInputIs2() {
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
+        String result = fizzBuzzConverter.convert(2);
+
+        Assert.assertEquals("2", result);
+    }
+
+    @Test
+    public void shouldReturnFizzWhenInputIs6() {
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
+        String result = fizzBuzzConverter.convert(6);
+
+        Assert.assertEquals("Fizz", result);
+    }
+
 }
