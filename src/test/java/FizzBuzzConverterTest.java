@@ -10,7 +10,15 @@ public class FizzBuzzConverterTest {
         String result = fizzBuzzConverter.convert(3);
 
         Assert.assertEquals("Fizz", result);
+    }
 
+    @Test
+    public void shouldReturnBuzzWhenInputIs5() {
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
+        String result = fizzBuzzConverter.convert(5);
+
+        Assert.assertEquals("Buzz", result);
     }
 
 }
