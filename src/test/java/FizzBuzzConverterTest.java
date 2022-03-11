@@ -21,4 +21,13 @@ public class FizzBuzzConverterTest {
         Assert.assertEquals("Buzz", result);
     }
 
+    @Test
+    public void shouldReturn1WhenInputIs1() {
+        FizzBuzzConverter fizzBuzzConverter = new FizzBuzzConverter();
+
+        String result = fizzBuzzConverter.convert(1);
+
+        Assert.assertEquals("1", result);
+    }
+
 }

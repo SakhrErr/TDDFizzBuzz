@@ -4,6 +4,10 @@ public class FizzBuzzConverter {
         if( i == 3 ) {
             return "Fizz";
         }
-        return "Buzz";
+        else if( i == 5) {
+            return "Buzz";
+        }
+
+        return "1";
     }
 }
